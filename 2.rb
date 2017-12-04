@@ -3,7 +3,7 @@ def to_rows input
 end
 
 def day_2 rows
-  rows.map { |row| row.max - row.min }.sum
+  rows.sum { |row| row.max - row.min }
 end
 
 p day_2 to_rows("116 1470  2610  179 2161  2690  831 1824  2361  1050  2201  118 145 2275  2625  2333
