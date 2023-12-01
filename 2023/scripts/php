@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Purpose:
+#
+# Runs the php cli inside the built container.
+
+cd "$(dirname "$0")/.."
+
+docker-compose run app php $@

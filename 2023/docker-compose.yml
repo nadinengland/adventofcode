@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./
+    environment:
+      TERM: dumb
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www/
+      - ~/.composer/docker-cache/:/root/.composer:cached

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Purpose:
+#
+# Installs app dependencies.
+
+cd "$(dirname "$0")/.."
+
+docker-compose run app composer update
